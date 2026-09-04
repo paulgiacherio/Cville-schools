@@ -144,5 +144,6 @@ footer p { margin: 0; }
   .yard-sign-image { min-height: 340px; }
   .yard-sign-copy { padding: 48px 28px 56px; }
   .section { padding-top: 80px; padding-bottom: 80px; }
-  .photo-break { height: 70vh; }
+  .photo-break { width: calc(100% - 48px); height: auto; margin: 0 24px; background: transparent; }
+  .photo-break img { height: auto; object-fit: contain; object-position: center; }
 }
