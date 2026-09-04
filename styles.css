@@ -117,7 +117,7 @@ footer p { margin: 0; }
   .hero { width: 100%; min-width: 0; min-height: 700px; padding-top: 130px; }
   .hero-lockup { display: grid; grid-template-columns: minmax(0, 1fr) minmax(150px, .45fr); gap: 28px; }
   .hero-support { grid-template-columns: minmax(0, 1fr) minmax(150px, .45fr); gap: 28px; }
-  .hero-mark { width: 100%; max-width: 100%; overflow: hidden; font-size: 30vw; letter-spacing: -.18em; }
+  .hero-mark { width: 100%; max-width: 100%; overflow: hidden; font-size: 30vw; letter-spacing: -.08em; }
   .hero-name { font-size: clamp(2.1rem, 7vw, 3.4rem); }
   .hero-copy { width: 100%; max-width: calc(100vw - 48px); }
   .benefits { grid-template-columns: 1fr 1fr; margin: 0; }
@@ -130,11 +130,11 @@ footer p { margin: 0; }
 }
 
 @media (max-width: 600px) {
-  .hero { padding-top: 126px; }
-  .hero-lockup { grid-template-columns: minmax(0, 1fr) 112px; gap: 18px; }
+  .hero { min-height: auto; padding-top: 126px; padding-bottom: 72px; }
+  .hero-lockup { display: flex; align-items: flex-end; gap: 18px; }
   .hero-support { grid-template-columns: 1fr; margin-top: 58px; padding-top: 26px; }
-  .hero-mark { font-size: 28vw; }
-  .hero-name { font-size: 1.75rem; }
+  .hero-mark { flex: 0 0 auto; width: auto; overflow: visible; font-size: 28vw; letter-spacing: -.08em; }
+  .hero-name { font-size: clamp(1.4rem, 5.7vw, 1.75rem); }
   .hero-action { margin-top: 30px; padding-top: 0; }
   .benefits { grid-template-columns: 1fr; }
   .benefits > div { min-height: 90px; }
